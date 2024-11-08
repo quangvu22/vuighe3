@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif; /* Đặt font chữ chính */
+    background-color: #f5f5f5; /* Màu nền của trang */
+    margin: 0; /* Loại bỏ khoảng cách ngoài */
+    padding: 0; /* Loại bỏ khoảng cách bên trong */
+}
+
+.anhvuighe {
+    display: flex; /* Sử dụng Flexbox để định dạng các phần tử con */
+    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+}
+
+.img-vuighe {
+    width: 250px; /* Chiều rộng hình ảnh */
+    height: 80px; /* Chiều cao hình ảnh */
+    margin-left: 15px; /* Khoảng cách bên trái hình ảnh */
+}
+
+.button-container {
+    display: flex; /* Sử dụng Flexbox để định dạng các nút bên trong */
+    align-items: center; /* Căn giữa các nút theo chiều dọc */
+    justify-content: center; /* Căn giữa các nút theo chiều ngang */
+    margin-left: 100px; /* Khoảng cách bên trái container */
+}
+
+.button-container button {
+    margin: 15px; /* Khoảng cách xung quanh nút */
+    padding: 7px 30px; /* Khoảng cách bên trong nút */
+    border-radius: 15px; /* Bo tròn các góc của nút */
+    border: 1px solid #c0baba; /* Viền nút với màu #c0baba */
+    cursor: pointer; /* Thay đổi con trỏ thành hình bàn tay khi di chuột qua */
+    font-size: 15px; /* Kích thước chữ của nút */
+}
+
+.button-container button:hover {
+    background-color: #ada9a9; /* Thay đổi màu nền khi hover */
+}
+
+.search-container {
+    position: relative; /* Đặt vị trí thành tương đối */
+    max-width: 400px; /* Chiều rộng tối đa của container */
+    margin-left: 10px; /* Khoảng cách bên trái container */
+}
+
+.search-input {
+    width: 350px; /* Chiều rộng của thanh tìm kiếm */
+    margin: 15px; /* Khoảng cách xung quanh thanh tìm kiếm */
+    padding: 7px 30px; /* Khoảng cách bên trong thanh tìm kiếm */
+    border: 1px solid #ccc; /* Viền thanh tìm kiếm với màu #ccc */
+    border-radius: 25px; /* Bo tròn các góc của thanh tìm kiếm */
+    font-size: 16px; /* Kích thước chữ của thanh tìm kiếm */
+    box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng đến kích thước tổng thể */
+}
+
+.navbar-container {
+    display: flex; /* Sử dụng Flexbox để định dạng các phần tử bên trong */
+    justify-content: space-between; /* Phân bố các phần tử với khoảng cách đều nhau */
+    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+    padding: 10px; /* Khoảng cách bên trong container */
+    color: #f40a0a; /* Màu chữ của các phần tử bên trong */
+    align-items: flex-end; /* Căn các phần tử theo cạnh dưới (có vẻ như mâu thuẫn với align-items: center) */
+    font-size: 15px; /* Kích thước chữ của các phần tử bên trong */
+    margin: 0 15px; /* Khoảng cách bên ngoài container */
+}
+
+.navbar {
+    display: flex; /* Sử dụng Flexbox để định dạng các phần tử bên trong */
+    justify-content: center; /* Căn giữa các phần tử theo chiều ngang */
+}
+
+.navbar button {
+    margin: 0 5px; /* Khoảng cách bên ngoài của mỗi nút */
+    padding: 5px 10px; /* Khoảng cách bên trong của nút */
+    border: none; /* Không có viền cho nút */
+    background-color: #b91c1c; /* Màu nền của nút */
+    color: white; /* Màu chữ của nút */
+    cursor: pointer; /* Thay đổi con trỏ thành hình bàn tay khi di chuột qua */
+    font-size: 16px; /* Kích thước chữ của nút */
+    border-radius: 5px; /* Bo tròn các góc của nút */
+}
+
+.navbar button:hover {
+    background-color: #cc0000; /* Thay đổi màu nền khi hover */
+}
+
+.ranking-container {
+    display: grid; /* Sử dụng Grid Layout để định dạng các phần tử bên trong */
+    grid-template-columns: repeat(4, 1fr); /* Định nghĩa 4 cột có chiều rộng bằng nhau */
+    gap: 20px; /* Khoảng cách giữa các ô */
+    padding: 0 20px; /* Khoảng cách bên trong container */
+}
+
+.ranking-item {
+    position: relative; /* Đặt vị trí thành tuyệt đối để dễ dàng căn chỉnh phần tử con */
+    overflow: hidden; /* Ẩn phần nội dung vượt ra ngoài kích thước phần tử */
+    border-radius: 10px; /* Bo tròn các góc của phần tử */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ cho phần tử */
+}
+
+.ranking-item img {
+    width: 100%; /* Chiều rộng của hình ảnh bằng 100% chiều rộng của phần tử chứa */
+    height: auto; /* Chiều cao tự động điều chỉnh theo tỷ lệ của hình ảnh */
+    display: block; /* Đặt hiển thị thành block để loại bỏ khoảng cách dưới cùng */
+    transition: transform 0.3s ease; /* Thêm hiệu ứng chuyển đổi cho thuộc tính transform */
+}
+
+.ranking-item:hover img {
+    transform: scale(1.05); /* Phóng to hình ảnh lên 105% khi hover */
+}
+
+.ranking-info {
+    position: absolute; /* Đặt vị trí thành tuyệt đối để nằm trên hình ảnh */
+    bottom: 0; /* Đặt phần tử nằm ở cạnh dưới của phần tử chứa */
+    left: 0; /* Đặt phần tử nằm ở cạnh trái của phần tử chứa */
+    width: 100%; /* Chiều rộng bằng 100% chiều rộng của phần tử chứa */
+    padding: 10px; /* Khoảng cách bên trong phần tử */
+    background: rgba(0, 0, 0, 0.6); /* Màu nền với độ mờ 0.6 */
+    color: #fff; /* Màu chữ trắng */
+    text-align: center; /* Căn giữa chữ theo chiều ngang */
+    transition: background 0.3s ease; /* Thêm hiệu ứng chuyển đổi cho thuộc tính background */
+}
+
+.ranking-item:hover .ranking-info {
+    background: rgba(0, 0, 0, 0.8); /* Thay đổi màu nền khi hover thành màu đen với độ mờ 0.8 */
+}
+
+.ranking-info h3 {
+    margin: 0; /* Loại bỏ khoảng cách bên ngoài của tiêu đề h3 */
+    font-size: 18px; /* Kích thước chữ của tiêu đề h3 */
+}
+
+.ranking-info p {
+    margin: 5px 0 0; /* Khoảng cách bên ngoài của đoạn văn */
+    font-size: 14px; /* Kích thước chữ của đoạn văn */
+}

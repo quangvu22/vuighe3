@@ -1,0 +1,215 @@
+/* Mobile: chiều rộng nhỏ hơn 740px */
+@media  screen and (max-width: 739px) {
+    #toggle{
+        display:block;
+    }
+    .anhvuighe{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       padding: 0 20px;
+    }
+   .img-small {
+        width: 50%; /* Đặt chiều rộng là 100% */
+    }
+
+    img {
+        width: 100%; /* Đặt chiều rộng là 100% */
+        margin-left: 0; /* Đặt khoảng cách bên trái là 0 */
+        margin-top: 10px; /* Đặt khoảng cách bên trên là 10px */
+    }
+
+    .login button {
+        margin-left: 0; /* Đặt khoảng cách bên trái là 0 */
+    }
+
+    .anhnen, .anhnen2 {
+        flex-direction: row; /* Sắp xếp các mục theo hàng ngang */
+        margin-right: 0; /* Đặt khoảng cách bên phải là 0 */
+    }
+
+    .anh {
+        flex: 0 0 48%; /* Đặt hai ảnh mỗi hàng */
+        margin: 1%; /* Đặt khoảng cách xung quanh là 1% */
+    }
+    .button-container {
+        flex-direction: column; /* Sắp xếp các nút theo cột */
+        align-items: flex-start; /* Căn các nút bắt đầu từ bên trái */
+        display: none;
+    }
+
+    .button-container a {
+        width: 100%; /* Đặt chiều rộng là 100% */
+    }
+
+    .button-container button {
+        width: 100%; /* Đặt chiều rộng là 100% */
+        text-align: left; /* Căn văn bản sang trái */
+        padding: 10px 15px; /* Đặt khoảng đệm bên trong */
+        box-sizing: border-box; /* Đảm bảo phần tử bao gồm cả viền và đệm trong kích thước */
+    }
+
+    .search-container {
+        width: 100%; /* Đặt chiều rộng là 100% */
+        margin-top: 10px; /* Đặt khoảng cách bên trên là 10px */
+    }
+
+    .login {
+        width: 100%; /* Đặt chiều rộng là 100% */
+        margin-top: 10px; /* Đặt khoảng cách bên trên là 10px */
+    }
+    
+}
+
+/* Tablet: chiều rộng từ 740px đến 1023px */
+@media  screen and (min-width: 740px) and (max-width: 1023px) {
+    p, .h2 {
+        font-size: 22px; /* Đặt kích thước chữ là 22px */
+        margin-left: 40px; /* Đặt khoảng cách bên trái là 40px */
+    }
+
+    .search-input {
+        width: 300px; /* Đặt chiều rộng là 300px */
+    }
+
+    .img-small {
+        width: 50%; /* Đặt chiều rộng là 50% */
+    }
+
+    img {
+        width: 80%; /* Đặt chiều rộng là 80% */
+        margin-left: 40px; /* Đặt khoảng cách bên trái là 40px */
+        margin-top: 20px; /* Đặt khoảng cách bên trên là 20px */
+    }
+
+    .login button {
+        margin-left: 100%; /* Đặt khoảng cách bên trái là 20% */
+    }
+
+    .anhnen, .anhnen2 {
+        flex-direction: row; /* Sắp xếp các mục theo hàng ngang */
+        margin-right: 60px; /* Đặt khoảng cách bên phải là 60px */
+    }
+
+    .text-overlay {
+        left: 40px; /* Đặt khoảng cách bên trái là 40px */
+    }
+
+    .image-row {
+        margin-left: 15px; /* Đặt khoảng cách bên trái là 15px */
+        margin-right: 30px; /* Đặt khoảng cách bên phải là 30px */
+    }
+
+    .button-container {
+        flex-direction: row; /* Sắp xếp các nút theo hàng ngang */
+        justify-content: space-between; /* Phân phối đều các nút */
+        gap: 5px; /* Khoảng cách giữa các nút là 5px */
+    }
+
+    .button-container a {
+        flex: 1; /* Đặt phần tử chiếm 1 phần không gian */
+    }
+
+    .button-container button {
+        flex: 1; /* Đặt phần tử chiếm 1 phần không gian */
+        text-align: center; /* Căn văn bản vào giữa */
+        padding: 8px; /* Đặt khoảng đệm bên trong */
+    }
+
+    .search-container {
+        flex: 1; /* Đặt phần tử chiếm 1 phần không gian */
+        margin-left: 5px; /* Đặt khoảng cách bên trái là 5px */
+    }
+
+    .login {
+        flex: 1; /* Đặt phần tử chiếm 1 phần không gian */
+        margin-left: 5px; /* Đặt khoảng cách bên trái là 5px */
+    }
+    
+}
+
+/* PC: chiều rộng từ 1024px trở lên */
+@media only screen and (min-width: 1024px) {
+    p, .h2 {
+        font-size: 25px; /* Đặt kích thước chữ là 25px */
+        margin-left: 80px; /* Đặt khoảng cách bên trái là 80px */
+    }
+
+    .search-input {
+        width: 420px; /* Đặt chiều rộng là 420px */
+    }
+
+    .img-small {
+        width: 40%; /* Đặt chiều rộng là 40% */
+    }
+
+    img {
+        width: 90%; /* Đặt chiều rộng là 90% */
+        margin-left: 80px; /* Đặt khoảng cách bên trái là 80px */
+        margin-top: 20px; /* Đặt khoảng cách bên trên là 20px */
+    }
+
+    
+    .anhnen, .anhnen2 {
+        flex-direction: row; /* Sắp xếp các mục theo hàng ngang */
+        margin-right: 120px; /* Đặt khoảng cách bên phải là 120px */
+    }
+
+    .text-overlay {
+        left: 80px; /* Đặt khoảng cách bên trái là 80px */
+    }
+
+    .image-row {
+        margin-left: 20px; /* Đặt khoảng cách bên trái là 20px */
+        margin-right: 60px; /* Đặt khoảng cách bên phải là 60px */
+    }
+    
+}
+/* Tablet: width between 740px and 1023px */
+@media (max-width: 1023px) {
+    .image_bts {
+        margin-bottom: 15px;
+    }
+
+    .image_bts img {
+        height: auto; /* Chiều cao tự động */
+        width: 100%; /* Chiều rộng 100% */
+    }
+
+    .image-row {
+        flex-wrap: wrap; /* Đảm bảo các mục xuống dòng khi không đủ không gian */
+        margin-left: 10px; /* Đặt khoảng cách bên trái là 10px */
+        margin-right: 10px; /* Đặt khoảng cách bên phải là 10px */
+    }
+
+    .anh3 {
+        flex: 1 1 45%; /* Điều chỉnh kích thước để mỗi hàng có 2 mục */
+        max-width: none;
+        margin: 5px;
+    }
+}
+
+/* Mobile: width less than 740px */
+@media (max-width: 739px) {
+    .image_bts {
+        margin-bottom: 10px;
+    }
+
+    .image_bts img {
+        height: auto; /* Chiều cao tự động */
+        width: 100%; /* Chiều rộng 100% */
+    }
+
+    .image-row {
+        flex-direction: column; /* Hiển thị các phần tử theo chiều dọc */
+        align-items: center; /* Căn giữa các mục theo chiều dọc */
+        margin-left: 10px; /* Đặt khoảng cách bên trái là 10px */
+        margin-right: 10px; /* Đặt khoảng cách bên phải là 10px */
+    }
+
+    .anh3 {
+        flex: 1 1 90%; /* Điều chỉnh kích thước để mỗi hàng có 1 mục */
+        max-width: none;
+        margin: 5px 0;
+    }
+}

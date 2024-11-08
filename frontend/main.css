@@ -1,0 +1,168 @@
+/* Cài đặt mặc định cho tất cả các thiết bị */
+* {
+    margin: 0; /* Loại bỏ khoảng cách mặc định */
+    padding: 0; /* Loại bỏ khoảng đệm mặc định */
+    box-sizing: border-box; /* Đảm bảo phần tử bao gồm cả viền và đệm trong kích thước */
+    
+}
+#toggle {
+    display: none;
+    cursor: pointer;   
+    font-size: 20px;
+}
+/* Phong cách chung */
+p, .h2 {
+    color: red; /* Đặt màu chữ là màu đỏ */
+    font-size: 25px; /* Đặt kích thước chữ là 25px */
+    margin-left: 80px; /* Đặt khoảng cách bên trái là 80px */
+}
+
+.button-container {
+    display: flex; /* Sử dụng flexbox để sắp xếp các nút */
+    align-items: center; /* Căn giữa các mục theo chiều dọc */
+    gap: 10px; /* Khoảng cách giữa các nút là 10px */
+    flex-wrap: wrap; /* Đảm bảo các nút xuống dòng khi không đủ không gian */
+}
+
+.button-container button {
+    padding: 5px 15px; /* Đặt khoảng đệm bên trong nút */
+    border-radius: 15px; /* Đặt bo tròn viền nút */
+    border: 1px solid #ccc; /* Đặt viền màu xám nhạt */
+    cursor: pointer; /* Thay đổi con trỏ thành con trỏ chuột khi di chuột qua */
+    white-space: nowrap; /* Đảm bảo văn bản trong nút không xuống dòng */
+    background: #fff;
+}
+.button-container button:hover {
+    color: red; /* Đổi màu chữ thành màu đỏ khi di chuột qua */
+}
+
+.anhvuighe {
+    display: flex; /* Sử dụng flexbox để sắp xếp các hình ảnh */
+    flex-wrap: wrap; /* Đảm bảo các hình ảnh xuống dòng khi không đủ không gian */
+}
+
+.search-container {
+    position: relative; /* Định vị tương đối để chứa phần tử con tuyệt đối */
+    margin-left: 10px; /* Đặt khoảng cách bên trái là 10px */
+    display: flex; /* Sử dụng flexbox để sắp xếp các mục */
+    align-items: center; /* Căn giữa các mục theo chiều dọc */
+}
+
+.search-input {
+    border: 1px solid #ccc; /* Đặt viền màu xám nhạt */
+    padding: 6px 40px 5px 10px; /* Cách đều bên trong phần tử */
+    border-radius: 15px; /* Đặt bo tròn viền */
+    outline: none; /* Xóa viền khi phần tử được chọn */
+    width: 420px; /* Đặt chiều rộng là 420px */
+}
+
+.search-icon {
+    color: rgb(90, 85, 85); /* Đặt màu chữ là màu xám đậm */
+    font-size: 20px; /* Đặt kích thước chữ là 20px */
+    position: absolute; /* Định vị tuyệt đối */
+    right: 10px; /* Đặt khoảng cách bên phải là 10px */
+    cursor: pointer; /* Thay đổi con trỏ thành con trỏ chuột khi di chuột qua */
+}
+
+.button-54 {
+    font-family: "Open Sans", sans-serif; /* Đặt font chữ */
+    font-size: 13px; /* Đặt kích thước chữ là 13px */
+    letter-spacing: 2px; /* Đặt khoảng cách giữa các chữ */
+    color: #000; /* Đặt màu chữ là màu đen */
+    cursor: pointer; /* Thay đổi con trỏ thành con trỏ chuột khi di chuột qua */
+    border: 3px solid; /* Đặt viền dày 3px */
+    padding: 0.25em 0.5em; /* Đặt khoảng đệm bên trong nút */
+    box-shadow: 
+        1px 1px 0px 0px, /* Đặt bóng đổ */
+        2px 2px 0px 0px,
+        3px 3px 0px 0px,
+        4px 4px 0px 0px,
+        5px 5px 0px 0px;
+}
+
+.login button {
+    text-decoration: none; /* Xóa gạch chân */
+    margin-left: 35%; /* Đặt khoảng cách bên trái là 35% */
+}
+
+.vien {
+    border-bottom: 2px solid #ccc; /* Đặt viền dưới là 2px và màu xám nhạt */
+}
+
+.anhnen, .anhnen2 {
+    display: flex; /* Sử dụng flexbox để sắp xếp các mục */
+    justify-content: space-around; /* Phân phối đều các mục */
+    align-items: center; /* Căn giữa các mục theo chiều dọc */
+    flex-wrap: wrap; /* Đảm bảo các mục xuống dòng khi không đủ không gian */
+    margin-right: 120px; /* Đặt khoảng cách bên phải là 120px */
+}
+
+.anh {
+    flex: 1; /* Đặt phần tử chiếm 1 phần không gian */
+    margin: 5px; /* Đặt khoảng cách xung quanh là 5px */
+    position: relative; /* Định vị tương đối để chứa phần tử con tuyệt đối */
+}
+
+.anh img, .image img {
+    height: auto; /* Chiều cao tự động theo tỷ lệ */
+    border-radius: 7px; /* Đặt bo tròn viền */
+    transition: transform 0.3s ease; /* Hiệu ứng chuyển động khi thay đổi kích thước */
+}
+
+.text-overlay {
+    position: absolute; /* Định vị tuyệt đối */
+    bottom: 20px; /* Đặt khoảng cách bên dưới là 20px */
+    left: 80px; /* Đặt khoảng cách bên trái là 80px */
+    color: white; /* Đặt màu chữ là màu trắng */
+    padding: 5px 10px; /* Đặt khoảng đệm bên trong */
+    text-shadow: 2px 2px 4px rgba(128, 11, 11, 0.7); /* Đặt bóng chữ */
+}
+
+.image_bts img:hover, .anh:hover img, .anh3 img:hover {
+    transform: scale(1.1); /* Phóng to ảnh khi di chuột qua */
+}
+
+.image_bts img {
+    height: 216px; /* Đặt chiều cao là 216px */
+    width: 420px; /* Đặt chiều rộng là 420px */
+}
+
+.anh3 img {
+    margin: 5px 0 0 0; /* Đặt khoảng cách trên là 5px, các khoảng cách khác là 0 */
+    width: 100%; /* Đặt chiều rộng là 100% */
+    height: auto; /* Chiều cao tự động theo tỷ lệ */
+    transition: transform 0.1s; /* Hiệu ứng chuyển động khi thay đổi kích thước */
+}
+
+.image-row {
+    display: flex; /* Sử dụng flexbox để sắp xếp các mục */
+    flex-wrap: wrap; /* Đảm bảo các mục xuống dòng khi không đủ không gian */
+    gap: 5px; /* Khoảng cách giữa các mục là 5px */
+    margin-left: 20px; /* Đặt khoảng cách bên trái là 20px */
+    margin-top: 10px; /* Đặt khoảng cách bên trên là 10px */
+    margin-right: 60px; /* Đặt khoảng cách bên phải là 60px */
+    justify-content: space-around; /* Phân phối đều các mục */
+    align-items: center; /* Căn giữa các mục theo chiều dọc */
+}
+
+.anh3 {
+    max-width: 200px; /* Đặt chiều rộng tối đa là 200px */
+    margin: 5px; /* Đặt khoảng cách xung quanh là 5px */
+}
+
+.anhnen3, .image-row {
+    display: flex; /* Sử dụng flexbox để sắp xếp các mục */
+}
+.movie{
+    display: flex;
+    gap:5px;
+}
+.movie1{
+    width: 227px;
+    height: auto;
+}
+
+
+
+
+

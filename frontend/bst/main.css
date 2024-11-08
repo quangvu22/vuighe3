@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.sborder{
+    border: 1px solid black;
+}
+
+.container{
+    margin: auto;
+    width: 90%;
+}
+
+.item{
+    width: 100%;
+}
+
+.nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    background: whitesmoke;
+    border-bottom: 2px groove;
+}
+
+.logo img{
+    width: 170px;
+    height: auto;
+}
+
+.logo{
+    justify-items: center;
+    margin-left: 15%;
+}
+
+.fnav{
+    text-align: center;
+    margin-left: -10%;
+}
+
+.fnav a{
+    border: 1px groove rgb(201, 191, 191);
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 3px 10px;
+    color: black;
+    opacity: 0.7;
+}
+
+.fnav a:hover{
+    color: brown;
+}
+
+.search{
+    text-align: end;
+}
+
+.search input{
+    width: 80%;
+    border-radius: 15px;
+    padding: 3px 10px;
+    border: 1px groove rgb(201, 191, 191);
+}
+
+.snav{
+    text-align: end;
+    width: 100%;
+    margin-right: 15%;
+}
+
+.snav button{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.header-img{
+    width: 100%;
+    margin-top: auto;
+}
+
+.header-img img{
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 5px 5px;
+    margin-top: 20px;
+}
+
+.film {
+    display: flex;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.film img{
+    width: 100%;
+}
+
+.film-container {
+    width: 100%;
+    position: relative;
+    color: black;
+    
+}
+
+.film-container img{
+    width: 100%;
+    transition: transform .4s;
+}
+
+.film-container:hover img{
+    transform: scale(1.1);
+    transform-origin: 50% 50%;
+}
+
+.film-desc{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translate(0%, 0%);
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    opacity: 0.9;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0));
+}
+
+
+.film-desc .film-name{
+    margin-top: auto;
+    padding-bottom: 20px;
+}
+
+.heading { 
+    font-weight: bold;
+    font-size: 15px;
+    overflow:hidden; 
+    white-space:nowrap; 
+    text-overflow:ellipsis; 
+    width:80%; 
+    color: white;
+    padding-left: 5%;
+}
+
+.second-heading {
+    color: white;
+    font-size: 11px;
+    padding-left: 5%;
+    margin-top: 10px;
+}
+
+.footer {
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    margin-bottom: 10%;
+}
+
+.group-button {
+    text-align: center;
+}
+
+.group-button button{
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+.current-button {
+    background-color: rgb(221, 13, 13);
+}
+
+.another-button {
+    background-color:  rgb(235, 81, 81);
+}
+
+.group-button a{
+    text-decoration: none;
+    color: white;
+}
+
+.dark-mode{
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
